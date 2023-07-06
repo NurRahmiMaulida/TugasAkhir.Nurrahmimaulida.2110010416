@@ -22,6 +22,14 @@ type
     Menu1: TMenuItem;
     LogOut1: TMenuItem;
     procedure LogOut1Click(Sender: TObject);
+    procedure btnortuClick(Sender: TObject);
+    procedure btnsiswaClick(Sender: TObject);
+    procedure btnwakelClick(Sender: TObject);
+    procedure btnkelasClick(Sender: TObject);
+    procedure btnpoinClick(Sender: TObject);
+    procedure btnsemesterClick(Sender: TObject);
+    procedure btnuserClick(Sender: TObject);
+    procedure btnhubunganClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,11 +41,61 @@ var
 
 implementation
 
+uses Unit6, Unit5, Unit4, Unit2, Unit3, Unit8, Unit7, Unit9;
+
 {$R *.dfm}
 
 procedure TForm1.LogOut1Click(Sender: TObject);
 begin
 Hide;
+end;
+
+procedure TForm1.btnortuClick(Sender: TObject);
+begin
+ hide;
+Form6.Show;
+end;
+
+procedure TForm1.btnsiswaClick(Sender: TObject);
+begin
+ hide;
+Form5.Show;
+end;
+
+procedure TForm1.btnwakelClick(Sender: TObject);
+begin
+ hide;
+Form4.Show;
+end;
+
+procedure TForm1.btnkelasClick(Sender: TObject);
+begin
+ hide;
+Form2.Show;
+end;
+
+procedure TForm1.btnpoinClick(Sender: TObject);
+begin
+ hide;
+Form3.Show;
+end;
+
+procedure TForm1.btnsemesterClick(Sender: TObject);
+begin
+ hide;
+Form8.Show;
+end;
+
+procedure TForm1.btnuserClick(Sender: TObject);
+begin
+ hide;
+Form7.Show;
+end;
+
+procedure TForm1.btnhubunganClick(Sender: TObject);
+begin
+ hide;
+Form9.Show;
 end;
 
 end.

@@ -80,7 +80,7 @@ object Form6: TForm6
   end
   object lbl1: TLabel
     Left = 328
-    Top = 24
+    Top = 8
     Width = 174
     Height = 23
     Caption = 'DATA ORANG TUA'
@@ -145,42 +145,55 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
   end
-  object edt3: TEdit
+  object lbl6: TLabel
+    Left = 32
+    Top = 53
+    Width = 51
+    Height = 16
+    Caption = 'ID ORTU'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+  end
+  object edt2: TEdit
     Left = 224
     Top = 77
     Width = 455
     Height = 21
     TabOrder = 0
   end
-  object edt4: TEdit
+  object edt3: TEdit
     Left = 224
     Top = 101
     Width = 455
     Height = 21
     TabOrder = 1
   end
-  object edt5: TEdit
+  object edt4: TEdit
     Left = 224
     Top = 125
     Width = 455
     Height = 21
     TabOrder = 2
   end
-  object edt6: TEdit
+  object edt5: TEdit
     Left = 224
     Top = 149
     Width = 455
     Height = 21
     TabOrder = 3
   end
-  object edt7: TEdit
+  object edt6: TEdit
     Left = 224
     Top = 173
     Width = 455
     Height = 21
     TabOrder = 4
   end
-  object dbgrddg1: TDBGrid
+  object dbgrd1: TDBGrid
     Left = 32
     Top = 380
     Width = 713
@@ -199,7 +212,7 @@ object Form6: TForm6
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object btnb1: TButton
+  object btn1: TButton
     Left = 32
     Top = 325
     Width = 97
@@ -213,7 +226,7 @@ object Form6: TForm6
     ParentFont = False
     TabOrder = 6
   end
-  object btnb2: TButton
+  object btn2: TButton
     Left = 152
     Top = 325
     Width = 97
@@ -227,7 +240,7 @@ object Form6: TForm6
     ParentFont = False
     TabOrder = 7
   end
-  object btnb3: TButton
+  object btn3: TButton
     Left = 264
     Top = 328
     Width = 97
@@ -241,7 +254,7 @@ object Form6: TForm6
     ParentFont = False
     TabOrder = 8
   end
-  object btnb4: TButton
+  object btn4: TButton
     Left = 384
     Top = 325
     Width = 97
@@ -255,7 +268,7 @@ object Form6: TForm6
     ParentFont = False
     TabOrder = 9
   end
-  object btnb5: TButton
+  object btn5: TButton
     Left = 504
     Top = 325
     Width = 97
@@ -269,7 +282,7 @@ object Form6: TForm6
     ParentFont = False
     TabOrder = 10
   end
-  object btnBb6: TButton
+  object btn6: TButton
     Left = 624
     Top = 328
     Width = 97
@@ -277,14 +290,14 @@ object Form6: TForm6
     Caption = 'LAPORAN'
     TabOrder = 11
   end
-  object edt1: TEdit
+  object edt7: TEdit
     Left = 224
     Top = 197
     Width = 455
     Height = 21
     TabOrder = 12
   end
-  object edt2: TEdit
+  object edt8: TEdit
     Left = 224
     Top = 245
     Width = 455
@@ -312,6 +325,13 @@ object Form6: TForm6
     Items.Strings = (
       'Hidup'
       'Alm')
+  end
+  object edt1: TEdit
+    Left = 224
+    Top = 48
+    Width = 457
+    Height = 25
+    TabOrder = 16
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

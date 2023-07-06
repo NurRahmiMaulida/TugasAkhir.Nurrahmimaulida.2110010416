@@ -12,20 +12,23 @@ type
     lbl1: TLabel;
     lbl4l: TLabel;
     lbl4l1: TLabel;
-    dbgrddg1: TDBGrid;
-    btnb1: TButton;
-    btnb2: TButton;
-    btnb3: TButton;
-    btnb4: TButton;
-    btnb5: TButton;
-    btnBb6: TButton;
+    dbgrd1: TDBGrid;
+    btn1: TButton;
+    btn2: TButton;
+    btn3: TButton;
+    btn4: TButton;
+    btn5: TButton;
+    btn6: TButton;
     edt1: TEdit;
-    cbbcmb1: TComboBox;
+    cbb1: TComboBox;
     con1: TZConnection;
     zqry1: TZQuery;
     ds1: TDataSource;
     frxreport1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    lbl2: TLabel;
+    edt2: TEdit;
+    lbl3: TLabel;
   private
     { Private declarations }
   public

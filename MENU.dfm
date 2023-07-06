@@ -49,6 +49,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'ORANG TUA'
     TabOrder = 0
+    OnClick = btnortuClick
   end
   object btnsiswa: TButton
     Left = 456
@@ -57,6 +58,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'SISWA'
     TabOrder = 1
+    OnClick = btnsiswaClick
   end
   object btnwakel: TButton
     Left = 632
@@ -65,6 +67,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'WALI KELAS'
     TabOrder = 2
+    OnClick = btnwakelClick
   end
   object btnpoin: TButton
     Left = 632
@@ -73,6 +76,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'POIN'
     TabOrder = 3
+    OnClick = btnpoinClick
   end
   object btnkelas: TButton
     Left = 288
@@ -81,6 +85,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'KELAS'
     TabOrder = 4
+    OnClick = btnkelasClick
   end
   object btnhubungan: TButton
     Left = 288
@@ -89,6 +94,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'HUBUNGAN'
     TabOrder = 5
+    OnClick = btnhubunganClick
   end
   object btnsemester: TButton
     Left = 456
@@ -97,6 +103,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'SEMESTER'
     TabOrder = 6
+    OnClick = btnsemesterClick
   end
   object btnuser: TButton
     Left = 544
@@ -111,6 +118,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 7
+    OnClick = btnuserClick
   end
   object mm1: TMainMenu
     Left = 240

@@ -14,8 +14,8 @@ object Form9: TForm9
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 256
-    Top = 24
+    Left = 280
+    Top = 16
     Width = 171
     Height = 23
     Caption = 'DATA HUBUNGAN'
@@ -93,7 +93,20 @@ object Form9: TForm9
     Font.Style = []
     ParentFont = False
   end
-  object dbgrddg1: TDBGrid
+  object lbl3: TLabel
+    Left = 32
+    Top = 53
+    Width = 12
+    Height = 16
+    Caption = 'ID'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+  end
+  object dbgrd1: TDBGrid
     Left = 32
     Top = 268
     Width = 617
@@ -112,7 +125,7 @@ object Form9: TForm9
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object btnb1: TButton
+  object btn1: TButton
     Left = 33
     Top = 219
     Width = 75
@@ -126,7 +139,7 @@ object Form9: TForm9
     ParentFont = False
     TabOrder = 1
   end
-  object btnb2: TButton
+  object btn2: TButton
     Left = 129
     Top = 219
     Width = 75
@@ -140,7 +153,7 @@ object Form9: TForm9
     ParentFont = False
     TabOrder = 2
   end
-  object btnb3: TButton
+  object btn3: TButton
     Left = 225
     Top = 222
     Width = 75
@@ -154,7 +167,7 @@ object Form9: TForm9
     ParentFont = False
     TabOrder = 3
   end
-  object btnb4: TButton
+  object btn4: TButton
     Left = 321
     Top = 219
     Width = 75
@@ -168,7 +181,7 @@ object Form9: TForm9
     ParentFont = False
     TabOrder = 4
   end
-  object btnb5: TButton
+  object btn5: TButton
     Left = 417
     Top = 219
     Width = 75
@@ -182,7 +195,7 @@ object Form9: TForm9
     ParentFont = False
     TabOrder = 5
   end
-  object btnBb6: TButton
+  object btn6: TButton
     Left = 513
     Top = 222
     Width = 75
@@ -190,21 +203,21 @@ object Form9: TForm9
     Caption = 'LAPORAN'
     TabOrder = 6
   end
-  object edt1: TEdit
+  object edt2: TEdit
     Left = 184
     Top = 72
     Width = 385
     Height = 21
     TabOrder = 7
   end
-  object edt2: TEdit
+  object edt3: TEdit
     Left = 184
     Top = 96
     Width = 385
     Height = 21
     TabOrder = 8
   end
-  object cbbcmb1: TComboBox
+  object cbb1: TComboBox
     Left = 184
     Top = 120
     Width = 385
@@ -216,7 +229,7 @@ object Form9: TForm9
       'Tiri'
       'Wali')
   end
-  object cbbcmb2: TComboBox
+  object cbb2: TComboBox
     Left = 184
     Top = 144
     Width = 385
@@ -230,7 +243,7 @@ object Form9: TForm9
       'Tante'
       'Wali')
   end
-  object cbbcmb3: TComboBox
+  object cbb3: TComboBox
     Left = 184
     Top = 168
     Width = 385
@@ -240,6 +253,13 @@ object Form9: TForm9
     Items.Strings = (
       'Hidup'
       'Alm')
+  end
+  object edt1: TEdit
+    Left = 184
+    Top = 48
+    Width = 385
+    Height = 21
+    TabOrder = 12
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

@@ -4,7 +4,7 @@ object Form8: TForm8
   Width = 729
   Height = 583
   Caption = 'DATA SEMESTER'
-  Color = clOlive
+  Color = clGray
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -14,8 +14,8 @@ object Form8: TForm8
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 256
-    Top = 24
+    Left = 296
+    Top = 16
     Width = 161
     Height = 23
     Caption = 'DATA SEMESTER'
@@ -132,12 +132,12 @@ object Form8: TForm8
     Font.Style = []
     ParentFont = False
   end
-  object lbl5: TLabel
+  object lbl6: TLabel
     Left = 32
-    Top = 269
-    Width = 100
+    Top = 53
+    Width = 12
     Height = 16
-    Caption = 'TINGKAT KELAS'
+    Caption = 'ID'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -145,7 +145,7 @@ object Form8: TForm8
     Font.Style = []
     ParentFont = False
   end
-  object dbgrddg1: TDBGrid
+  object dbgrd1: TDBGrid
     Left = 32
     Top = 332
     Width = 617
@@ -164,7 +164,7 @@ object Form8: TForm8
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object btnb1: TButton
+  object btn1: TButton
     Left = 65
     Top = 299
     Width = 75
@@ -178,7 +178,7 @@ object Form8: TForm8
     ParentFont = False
     TabOrder = 1
   end
-  object btnb2: TButton
+  object btn2: TButton
     Left = 153
     Top = 299
     Width = 75
@@ -192,7 +192,7 @@ object Form8: TForm8
     ParentFont = False
     TabOrder = 2
   end
-  object btnb3: TButton
+  object btn3: TButton
     Left = 249
     Top = 302
     Width = 75
@@ -206,7 +206,7 @@ object Form8: TForm8
     ParentFont = False
     TabOrder = 3
   end
-  object btnb4: TButton
+  object btn4: TButton
     Left = 337
     Top = 299
     Width = 75
@@ -220,7 +220,7 @@ object Form8: TForm8
     ParentFont = False
     TabOrder = 4
   end
-  object btnb5: TButton
+  object btn5: TButton
     Left = 425
     Top = 299
     Width = 75
@@ -234,7 +234,7 @@ object Form8: TForm8
     ParentFont = False
     TabOrder = 5
   end
-  object btnBb6: TButton
+  object btn6: TButton
     Left = 513
     Top = 302
     Width = 75
@@ -242,42 +242,42 @@ object Form8: TForm8
     Caption = 'LAPORAN'
     TabOrder = 6
   end
-  object edt1: TEdit
+  object edt2: TEdit
     Left = 184
     Top = 72
     Width = 385
     Height = 21
     TabOrder = 7
   end
-  object edt2: TEdit
+  object edt3: TEdit
     Left = 184
     Top = 96
     Width = 385
     Height = 21
     TabOrder = 8
   end
-  object edt3: TEdit
+  object edt4: TEdit
     Left = 184
     Top = 120
     Width = 385
     Height = 21
     TabOrder = 9
   end
-  object edt4: TEdit
+  object edt5: TEdit
     Left = 184
     Top = 144
     Width = 385
     Height = 21
     TabOrder = 10
   end
-  object edt5: TEdit
+  object edt6: TEdit
     Left = 184
     Top = 168
     Width = 385
     Height = 21
     TabOrder = 11
   end
-  object cbbcmb1: TComboBox
+  object cbb1: TComboBox
     Left = 184
     Top = 216
     Width = 385
@@ -288,14 +288,14 @@ object Form8: TForm8
       'Ganjil'
       'Genap')
   end
-  object edt6: TEdit
+  object edt7: TEdit
     Left = 184
     Top = 192
     Width = 385
     Height = 21
     TabOrder = 13
   end
-  object cbbcmb2: TComboBox
+  object cbb2: TComboBox
     Left = 184
     Top = 240
     Width = 385
@@ -303,20 +303,15 @@ object Form8: TForm8
     ItemHeight = 13
     TabOrder = 14
     Items.Strings = (
-      'Lulus'
-      'Tidak Lulus')
+      'Aktif'
+      'Tidak Aktif')
   end
-  object cbbcmb3: TComboBox
+  object edt1: TEdit
     Left = 184
-    Top = 264
+    Top = 48
     Width = 385
     Height = 21
-    ItemHeight = 13
     TabOrder = 15
-    Items.Strings = (
-      '10'
-      '11'
-      '12')
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

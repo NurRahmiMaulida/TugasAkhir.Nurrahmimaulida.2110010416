@@ -14,8 +14,8 @@ object Form7: TForm7
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 272
-    Top = 24
+    Left = 312
+    Top = 16
     Width = 110
     Height = 23
     Caption = 'DATA USER'
@@ -80,6 +80,19 @@ object Form7: TForm7
     Font.Style = []
     ParentFont = False
   end
+  object lbl3: TLabel
+    Left = 32
+    Top = 53
+    Width = 12
+    Height = 16
+    Caption = 'ID'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
+  end
   object dbgrddg1: TDBGrid
     Left = 24
     Top = 272
@@ -99,7 +112,7 @@ object Form7: TForm7
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object btnb1: TButton
+  object btn1: TButton
     Left = 65
     Top = 227
     Width = 75
@@ -113,7 +126,7 @@ object Form7: TForm7
     ParentFont = False
     TabOrder = 1
   end
-  object btnb2: TButton
+  object btn2: TButton
     Left = 153
     Top = 227
     Width = 75
@@ -127,7 +140,7 @@ object Form7: TForm7
     ParentFont = False
     TabOrder = 2
   end
-  object btnb3: TButton
+  object btn3: TButton
     Left = 249
     Top = 230
     Width = 75
@@ -141,7 +154,7 @@ object Form7: TForm7
     ParentFont = False
     TabOrder = 3
   end
-  object btnb4: TButton
+  object btn4: TButton
     Left = 337
     Top = 227
     Width = 75
@@ -155,7 +168,7 @@ object Form7: TForm7
     ParentFont = False
     TabOrder = 4
   end
-  object btnb5: TButton
+  object btn5: TButton
     Left = 425
     Top = 227
     Width = 75
@@ -169,7 +182,7 @@ object Form7: TForm7
     ParentFont = False
     TabOrder = 5
   end
-  object btnBb6: TButton
+  object btn6: TButton
     Left = 513
     Top = 230
     Width = 75
@@ -177,14 +190,14 @@ object Form7: TForm7
     Caption = 'LAPORAN'
     TabOrder = 6
   end
-  object edt1: TEdit
+  object edt2: TEdit
     Left = 184
     Top = 72
     Width = 385
     Height = 21
     TabOrder = 7
   end
-  object edt2: TEdit
+  object edt3: TEdit
     Left = 184
     Top = 96
     Width = 385
@@ -212,6 +225,13 @@ object Form7: TForm7
     Items.Strings = (
       'Aktif'
       'Tidak')
+  end
+  object edt1: TEdit
+    Left = 184
+    Top = 48
+    Width = 385
+    Height = 21
+    TabOrder = 11
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

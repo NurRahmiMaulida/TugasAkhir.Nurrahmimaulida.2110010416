@@ -21,29 +21,31 @@ type
     lbl4: TLabel;
     lbl5: TLabel;
     lbl6: TLabel;
-    dbgrddg1: TDBGrid;
-    btnb1: TButton;
-    btnb2: TButton;
-    btnb3: TButton;
-    btnb4: TButton;
-    btnb5: TButton;
-    btnBb6: TButton;
-    edt1: TEdit;
-    edt2: TEdit;
-    edt3: TEdit;
-    edt4: TEdit;
-    edt5: TEdit;
-    edt7: TEdit;
-    edt8: TEdit;
-    cbbcmb1: TComboBox;
-    cbbcmb2: TComboBox;
+    dbgrd1: TDBGrid;
+    btn1: TButton;
+    btn2: TButton;
+    btn3: TButton;
+    btn4: TButton;
+    btn5: TButton;
+    btn6: TButton;
+    edt11: TEdit;
+    edt22: TEdit;
+    edt32: TEdit;
+    edt42: TEdit;
+    edt52: TEdit;
+    edt72: TEdit;
+    edt81: TEdit;
+    cbb1: TComboBox;
+    cbb2: TComboBox;
     dtp1: TDateTimePicker;
-    edt6: TEdit;
+    edt62: TEdit;
     con1: TZConnection;
     zqry1: TZQuery;
     ds1: TDataSource;
     frxreport1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    lbl7: TLabel;
+    edt92: TEdit;
   private
     { Private declarations }
   public
