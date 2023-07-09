@@ -283,6 +283,7 @@ object Form6: TForm6
     Height = 41
     Caption = 'LAPORAN'
     TabOrder = 11
+    OnClick = btn6Click
   end
   object edt6: TEdit
     Left = 224

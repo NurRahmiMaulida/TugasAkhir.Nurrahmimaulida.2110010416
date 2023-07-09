@@ -53,6 +53,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -157,7 +158,7 @@ end;
 
 procedure TForm6.btn2Click(Sender: TObject);
 begin
-if(Edt1.Text = '')or(Edt2.Text = '')or(Edt3.Text = '')or(Edt4.Text = '')or(Edt5.Text = '')or(edt6.Text = '')or(edt7.Text = '')or(cbb1.Text = '')or(cbb2.Text = '')then
+if(Edt1.Text = '')or(Edt2.Text = '')or(Edt3.Text = '')or(Edt4.Text = '')or(Edt5.Text = '')or(edt6.Text = '')or(cbb1.Text = '')or(edt7.Text = '')or(cbb2.Text = '')then
 begin
   ShowMessage('DATA TIDAK BOLEH KOSONG !');
 end else
@@ -226,6 +227,11 @@ procedure TForm6.btn7Click(Sender: TObject);
 begin
 hide;
 form1.show;
+end;
+
+procedure TForm6.btn6Click(Sender: TObject);
+begin
+frxreport1.ShowReport();
 end;
 
 end.

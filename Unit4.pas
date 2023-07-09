@@ -52,6 +52,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -228,6 +229,11 @@ btn2.Enabled:= false;
 btn3.Enabled:= false;
 btn4.enabled:= False;
 btn5.enabled:= false;
+end;
+
+procedure TForm4.btn6Click(Sender: TObject);
+begin
+frxreport1.ShowReport();
 end;
 
 end.

@@ -180,6 +180,7 @@ object Form9: TForm9
     Height = 26
     Caption = 'LAPORAN'
     TabOrder = 5
+    OnClick = btn6Click
   end
   object edt1: TEdit
     Left = 184

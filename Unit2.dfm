@@ -135,6 +135,7 @@ object Form2: TForm2
     Height = 26
     Caption = 'LAPORAN'
     TabOrder = 4
+    OnClick = btn6Click
   end
   object cbb1: TComboBox
     Left = 184
@@ -144,8 +145,10 @@ object Form2: TForm2
     ItemHeight = 13
     TabOrder = 5
     Items.Strings = (
-      'IPA'
-      ' IPS')
+      'Listrik'
+      'Dokter'
+      'Otomotif'
+      'TKJ')
   end
   object edt1: TEdit
     Left = 184

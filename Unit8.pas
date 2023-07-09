@@ -54,6 +54,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -245,6 +246,11 @@ zqry1.Open;
 ShowMessage('DATA BERHASIL DISIMPAN!!');
 posisiawal;
 end;
+end;
+
+procedure TForm8.btn6Click(Sender: TObject);
+begin
+frxreport1.ShowReport();
 end;
 
 end.

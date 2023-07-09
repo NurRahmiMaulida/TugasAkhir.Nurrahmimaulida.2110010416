@@ -45,6 +45,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
+    procedure btn6Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -207,6 +208,11 @@ edt2.Text:= zqry1.FieldList[2].AsString;
 cbb1.Text:= zqry1.FieldList[3].AsString;
 cbb2.Text:= zqry1.FieldList[4].AsString;
 cbb3.Text:= zqry1.FieldList[5].AsString;
+end;
+
+procedure TForm9.btn6Click(Sender: TObject);
+begin
+frxreport1.ShowReport();
 end;
 
 end.

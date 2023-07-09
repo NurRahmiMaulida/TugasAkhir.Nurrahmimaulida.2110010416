@@ -44,6 +44,7 @@ type
     procedure btn5Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -206,6 +207,11 @@ procedure TForm3.btn7Click(Sender: TObject);
 begin
  Hide;
   Form1.Show;
+end;
+
+procedure TForm3.btn6Click(Sender: TObject);
+begin
+frxreport1.ShowReport();
 end;
 
 end.
