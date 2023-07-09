@@ -11,6 +11,7 @@ object Form5: TForm5
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl4l: TLabel
@@ -158,19 +159,6 @@ object Form5: TForm5
     Font.Style = []
     ParentFont = False
   end
-  object lbl7: TLabel
-    Left = 32
-    Top = 53
-    Width = 59
-    Height = 16
-    Caption = 'ID SISWA'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Roboto'
-    Font.Style = []
-    ParentFont = False
-  end
   object dbgrd1: TDBGrid
     Left = 32
     Top = 380
@@ -189,6 +177,7 @@ object Form5: TForm5
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn1: TButton
     Left = 65
@@ -203,6 +192,7 @@ object Form5: TForm5
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 153
@@ -217,6 +207,7 @@ object Form5: TForm5
     Font.Style = []
     ParentFont = False
     TabOrder = 2
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 249
@@ -231,6 +222,7 @@ object Form5: TForm5
     Font.Style = []
     ParentFont = False
     TabOrder = 3
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 337
@@ -245,6 +237,7 @@ object Form5: TForm5
     Font.Style = []
     ParentFont = False
     TabOrder = 4
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 425
@@ -259,6 +252,7 @@ object Form5: TForm5
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 513
@@ -268,49 +262,49 @@ object Form5: TForm5
     Caption = 'LAPORAN'
     TabOrder = 6
   end
-  object edt11: TEdit
+  object edt1: TEdit
     Left = 184
     Top = 72
     Width = 385
     Height = 21
     TabOrder = 7
   end
-  object edt22: TEdit
+  object edt2: TEdit
     Left = 184
     Top = 96
     Width = 385
     Height = 21
     TabOrder = 8
   end
-  object edt32: TEdit
+  object edt3: TEdit
     Left = 184
     Top = 120
     Width = 385
     Height = 21
     TabOrder = 9
   end
-  object edt42: TEdit
+  object edt4: TEdit
     Left = 184
     Top = 144
     Width = 385
     Height = 21
     TabOrder = 10
   end
-  object edt52: TEdit
+  object edt5: TEdit
     Left = 184
     Top = 168
     Width = 385
     Height = 21
     TabOrder = 11
   end
-  object edt72: TEdit
+  object edt7: TEdit
     Left = 184
     Top = 240
     Width = 385
     Height = 21
     TabOrder = 12
   end
-  object edt81: TEdit
+  object edt8: TEdit
     Left = 184
     Top = 264
     Width = 385
@@ -348,35 +342,41 @@ object Form5: TForm5
     Time = 0.584595231484854600
     TabOrder = 16
   end
-  object edt62: TEdit
+  object edt6: TEdit
     Left = 184
     Top = 192
     Width = 385
     Height = 21
     TabOrder = 17
   end
-  object edt92: TEdit
-    Left = 184
-    Top = 48
-    Width = 385
-    Height = 21
+  object btn7: TBitBtn
+    Left = 32
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = 'KEMBALI'
     TabOrder = 18
+    OnClick = btn7Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
-    Database = 'database_siswa'
+    Database = 'sekolah'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'D:\Rnldi-PC\S4\UAS-VISUAL-2-main\libmysql.dll'
+    LibraryLocation = 
+      'D:\DOKUMEN\SEMESTER 4\PEMPROGRAMAN VISUAL 2 (VISUAL)\ProjekAkhir' +
+      '\libmysql.dll'
     Left = 608
     Top = 64
   end
   object zqry1: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from tabel_siswa')
     Params = <>

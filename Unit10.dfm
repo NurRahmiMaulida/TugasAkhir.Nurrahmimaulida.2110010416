@@ -69,10 +69,10 @@ object Form10: TForm10
     TabOrder = 1
   end
   object btnb1: TButton
-    Left = 160
-    Top = 213
-    Width = 97
-    Height = 44
+    Left = 136
+    Top = 208
+    Width = 113
+    Height = 49
     Caption = 'MASUK'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -81,36 +81,36 @@ object Form10: TForm10
     Font.Style = []
     ParentFont = False
     TabOrder = 2
+    OnClick = btnb1Click
   end
-  object btnb2: TButton
+  object btn1: TButton
     Left = 280
-    Top = 213
-    Width = 97
-    Height = 44
+    Top = 208
+    Width = 121
+    Height = 49
     Caption = 'CANCEL'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
     TabOrder = 3
+    OnClick = btn1Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
-    Database = 'database_siswa'
+    Database = 'sekolah'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'D:\Rnldi-PC\S4\UAS-VISUAL-2-main\libmysql.dll'
+    LibraryLocation = 
+      'D:\DOKUMEN\SEMESTER 4\PEMPROGRAMAN VISUAL 2 (VISUAL)\ProjekAkhir' +
+      '\libmysql.dll'
     Left = 216
     Top = 272
   end
   object zqry1: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'SELECT * FROM tabel_user')
     Params = <>

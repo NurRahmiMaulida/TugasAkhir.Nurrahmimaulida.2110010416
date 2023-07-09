@@ -11,6 +11,8 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -31,9 +33,9 @@ object Form2: TForm2
   object lbl4l: TLabel
     Left = 32
     Top = 101
-    Width = 84
+    Width = 41
     Height = 16
-    Caption = 'NAMA SISWA'
+    Caption = 'NAMA '
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -66,52 +68,6 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
-  object lbl3: TLabel
-    Left = 32
-    Top = 69
-    Width = 12
-    Height = 16
-    Caption = 'ID'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Roboto'
-    Font.Style = []
-    ParentFont = False
-  end
-  object dbgrd1: TDBGrid
-    Left = 24
-    Top = 272
-    Width = 617
-    Height = 193
-    DataSource = ds1
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 0
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
-  end
-  object btn1: TButton
-    Left = 65
-    Top = 227
-    Width = 75
-    Height = 29
-    Caption = 'BARU'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 1
-  end
   object btn2: TButton
     Left = 153
     Top = 227
@@ -124,7 +80,8 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 2
+    TabOrder = 0
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 249
@@ -138,7 +95,8 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 3
+    TabOrder = 1
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 337
@@ -152,7 +110,8 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 4
+    TabOrder = 2
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 425
@@ -166,7 +125,8 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 3
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 513
@@ -174,14 +134,7 @@ object Form2: TForm2
     Width = 75
     Height = 26
     Caption = 'LAPORAN'
-    TabOrder = 6
-  end
-  object edt1: TEdit
-    Left = 184
-    Top = 64
-    Width = 377
-    Height = 21
-    TabOrder = 7
+    TabOrder = 4
   end
   object cbb1: TComboBox
     Left = 184
@@ -189,36 +142,69 @@ object Form2: TForm2
     Width = 385
     Height = 21
     ItemHeight = 13
-    TabOrder = 8
+    TabOrder = 5
     Items.Strings = (
-      'PERKANTORAN'
-      'MULTIMEDIA'
-      'TKJ'
-      'OTOMOTIF'
-      'LISTRIK')
+      'IPA'
+      ' IPS')
   end
-  object edt2: TEdit
+  object edt1: TEdit
     Left = 184
     Top = 96
     Width = 377
     Height = 21
+    TabOrder = 6
+  end
+  object btn1: TButton
+    Left = 48
+    Top = 224
+    Width = 75
+    Height = 33
+    Caption = 'BARU'
+    TabOrder = 7
+    OnClick = btn1Click
+  end
+  object btn7: TBitBtn
+    Left = 32
+    Top = 16
+    Width = 81
+    Height = 33
+    Caption = 'KEMBALI'
+    TabOrder = 8
+    OnClick = btn7Click
+  end
+  object dbgrd1: TDBGrid
+    Left = 56
+    Top = 296
+    Width = 569
+    Height = 177
+    DataSource = ds1
     TabOrder = 9
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
-    Database = 'database_siswa'
+    Database = 'sekolah'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'D:\Rnldi-PC\S4\UAS-VISUAL-2-main\libmysql.dll'
+    LibraryLocation = 
+      'D:\DOKUMEN\SEMESTER 4\PEMPROGRAMAN VISUAL 2 (VISUAL)\ProjekAkhir' +
+      '\libmysql.dll'
     Left = 616
     Top = 16
   end
   object zqry1: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from tabel_kelas')
     Params = <>
@@ -399,7 +385,7 @@ object Form2: TForm2
   object frxdbdtst1: TfrxDBDataset
     UserName = 'frxdbdtst1'
     CloseDataSource = False
-    DataSource = ds1
+    DataSet = zqry1
     Left = 616
     Top = 216
   end

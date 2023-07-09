@@ -11,6 +11,7 @@ object Form6: TForm6
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl4l: TLabel
@@ -145,48 +146,35 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
   end
-  object lbl6: TLabel
-    Left = 32
-    Top = 53
-    Width = 51
-    Height = 16
-    Caption = 'ID ORTU'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Roboto'
-    Font.Style = []
-    ParentFont = False
-  end
-  object edt2: TEdit
+  object edt1: TEdit
     Left = 224
     Top = 77
     Width = 455
     Height = 21
     TabOrder = 0
   end
-  object edt3: TEdit
+  object edt2: TEdit
     Left = 224
     Top = 101
     Width = 455
     Height = 21
     TabOrder = 1
   end
-  object edt4: TEdit
+  object edt3: TEdit
     Left = 224
     Top = 125
     Width = 455
     Height = 21
     TabOrder = 2
   end
-  object edt5: TEdit
+  object edt4: TEdit
     Left = 224
     Top = 149
     Width = 455
     Height = 21
     TabOrder = 3
   end
-  object edt6: TEdit
+  object edt5: TEdit
     Left = 224
     Top = 173
     Width = 455
@@ -211,6 +199,7 @@ object Form6: TForm6
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
   end
   object btn1: TButton
     Left = 32
@@ -225,6 +214,7 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
     TabOrder = 6
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 152
@@ -239,6 +229,7 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
     TabOrder = 7
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 264
@@ -253,6 +244,7 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
     TabOrder = 8
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 384
@@ -267,6 +259,7 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
     TabOrder = 9
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 504
@@ -281,6 +274,7 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
     TabOrder = 10
+    OnClick = btn5Click
   end
   object btn6: TButton
     Left = 624
@@ -290,14 +284,14 @@ object Form6: TForm6
     Caption = 'LAPORAN'
     TabOrder = 11
   end
-  object edt7: TEdit
+  object edt6: TEdit
     Left = 224
     Top = 197
     Width = 455
     Height = 21
     TabOrder = 12
   end
-  object edt8: TEdit
+  object edt7: TEdit
     Left = 224
     Top = 245
     Width = 455
@@ -326,28 +320,34 @@ object Form6: TForm6
       'Hidup'
       'Alm')
   end
-  object edt1: TEdit
-    Left = 224
-    Top = 48
-    Width = 457
+  object btn7: TBitBtn
+    Left = 32
+    Top = 24
+    Width = 75
     Height = 25
+    Caption = 'KEMBALI'
     TabOrder = 16
+    OnClick = btn7Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
     Port = 3306
-    Database = 'database_siswa'
+    Database = 'sekolah'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'D:\Rnldi-PC\S4\UAS-VISUAL-2-main\libmysql.dll'
+    LibraryLocation = 
+      'D:\DOKUMEN\SEMESTER 4\PEMPROGRAMAN VISUAL 2 (VISUAL)\ProjekAkhir' +
+      '\libmysql.dll'
     Left = 704
     Top = 56
   end
   object zqry1: TZQuery
     Connection = con1
+    Active = True
     SQL.Strings = (
       'select * from tabel_ortu')
     Params = <>
