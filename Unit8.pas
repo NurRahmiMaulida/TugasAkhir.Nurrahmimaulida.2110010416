@@ -11,6 +11,19 @@ uses
 type
   TForm8 = class(TForm)
     lbl1: TLabel;
+    dbgrd1: TDBGrid;
+    btn1: TButton;
+    btn2: TButton;
+    btn3: TButton;
+    btn4: TButton;
+    btn5: TButton;
+    btn6: TButton;
+    con1: TZConnection;
+    zqry1: TZQuery;
+    ds1: TDataSource;
+    frxreport1: TfrxReport;
+    frxdbdtst1: TfrxDBDataset;
+    btn7: TBitBtn;
     lbl4l: TLabel;
     lbl4l1: TLabel;
     lbl4l2: TLabel;
@@ -19,13 +32,7 @@ type
     lbl2: TLabel;
     lbl3: TLabel;
     lbl4: TLabel;
-    dbgrd1: TDBGrid;
-    btn1: TButton;
-    btn2: TButton;
-    btn3: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    btn6: TButton;
+    lbl5: TLabel;
     edt1: TEdit;
     edt2: TEdit;
     edt3: TEdit;
@@ -34,13 +41,6 @@ type
     cbb1: TComboBox;
     edt6: TEdit;
     cbb2: TComboBox;
-    con1: TZConnection;
-    zqry1: TZQuery;
-    ds1: TDataSource;
-    frxreport1: TfrxReport;
-    frxdbdtst1: TfrxDBDataset;
-    btn7: TBitBtn;
-    lbl5: TLabel;
     cbb3: TComboBox;
     procedure posisiawal;
     procedure editbersih;

@@ -256,70 +256,6 @@ object Form8: TForm8
     TabOrder = 6
     OnClick = btn6Click
   end
-  object edt1: TEdit
-    Left = 184
-    Top = 72
-    Width = 385
-    Height = 21
-    TabOrder = 7
-  end
-  object edt2: TEdit
-    Left = 184
-    Top = 96
-    Width = 385
-    Height = 21
-    TabOrder = 8
-  end
-  object edt3: TEdit
-    Left = 184
-    Top = 120
-    Width = 385
-    Height = 21
-    TabOrder = 9
-  end
-  object edt4: TEdit
-    Left = 184
-    Top = 144
-    Width = 385
-    Height = 21
-    TabOrder = 10
-  end
-  object edt5: TEdit
-    Left = 184
-    Top = 168
-    Width = 385
-    Height = 21
-    TabOrder = 11
-  end
-  object cbb1: TComboBox
-    Left = 184
-    Top = 216
-    Width = 385
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 12
-    Items.Strings = (
-      'Ganjil'
-      'Genap')
-  end
-  object edt6: TEdit
-    Left = 184
-    Top = 192
-    Width = 385
-    Height = 21
-    TabOrder = 13
-  end
-  object cbb2: TComboBox
-    Left = 184
-    Top = 240
-    Width = 385
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 14
-    Items.Strings = (
-      'Aktif'
-      'Tidak Aktif')
-  end
   object btn7: TBitBtn
     Left = 32
     Top = 24
@@ -332,8 +268,72 @@ object Form8: TForm8
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 7
     OnClick = btn7Click
+  end
+  object edt1: TEdit
+    Left = 184
+    Top = 72
+    Width = 385
+    Height = 21
+    TabOrder = 8
+  end
+  object edt2: TEdit
+    Left = 184
+    Top = 96
+    Width = 385
+    Height = 21
+    TabOrder = 9
+  end
+  object edt3: TEdit
+    Left = 184
+    Top = 120
+    Width = 385
+    Height = 21
+    TabOrder = 10
+  end
+  object edt4: TEdit
+    Left = 184
+    Top = 144
+    Width = 385
+    Height = 21
+    TabOrder = 11
+  end
+  object edt5: TEdit
+    Left = 184
+    Top = 168
+    Width = 385
+    Height = 21
+    TabOrder = 12
+  end
+  object cbb1: TComboBox
+    Left = 184
+    Top = 216
+    Width = 385
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 13
+    Items.Strings = (
+      'Ganjil'
+      'Genap')
+  end
+  object edt6: TEdit
+    Left = 184
+    Top = 192
+    Width = 385
+    Height = 21
+    TabOrder = 14
+  end
+  object cbb2: TComboBox
+    Left = 184
+    Top = 240
+    Width = 385
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 15
+    Items.Strings = (
+      'Lulus'
+      'Tidak Lulus')
   end
   object cbb3: TComboBox
     Left = 184

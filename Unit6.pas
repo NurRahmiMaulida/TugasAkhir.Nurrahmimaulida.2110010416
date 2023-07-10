@@ -10,21 +10,7 @@ uses
 
 type
   TForm6 = class(TForm)
-    lbl4l: TLabel;
-    lbl4l1: TLabel;
-    lbl4l2: TLabel;
-    lbl4l3: TLabel;
-    lbl4l4: TLabel;
     lbl1: TLabel;
-    lbl2: TLabel;
-    lbl3: TLabel;
-    lbl4: TLabel;
-    lbl5: TLabel;
-    edt1: TEdit;
-    edt2: TEdit;
-    edt3: TEdit;
-    edt4: TEdit;
-    edt5: TEdit;
     dbgrd1: TDBGrid;
     btn1: TButton;
     btn2: TButton;
@@ -32,16 +18,30 @@ type
     btn4: TButton;
     btn5: TButton;
     btn6: TButton;
-    edt6: TEdit;
-    edt7: TEdit;
-    cbb1: TComboBox;
-    cbb2: TComboBox;
     con1: TZConnection;
     zqry1: TZQuery;
     ds1: TDataSource;
     frxreport1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
     btn7: TBitBtn;
+    lbl4l: TLabel;
+    lbl4l1: TLabel;
+    lbl4l2: TLabel;
+    lbl4l3: TLabel;
+    lbl4l4: TLabel;
+    lbl2: TLabel;
+    lbl3: TLabel;
+    lbl4: TLabel;
+    lbl5: TLabel;
+    edt3: TEdit;
+    edt4: TEdit;
+    edt5: TEdit;
+    edt6: TEdit;
+    edt7: TEdit;
+    edt1: TEdit;
+    edt2: TEdit;
+    cbb1: TComboBox;
+    cbb2: TComboBox;
     procedure posisiawal;
     procedure editbersih;
     procedure editenable;
@@ -182,12 +182,21 @@ end;
 
 procedure TForm6.btn3Click(Sender: TObject);
 begin
+if (Edt1.Text = '')or(Edt2.Text = '')or(Edt3.Text = '')or(Edt4.Text = '')or(Edt5.Text = '')or(edt1.Text = '')or(edt2.Text = '')or(cbb1.Text = '')or(cbb2.Text = '')then
+begin
+  ShowMessage('DATA TIDAK BOLEH KOSONG !');
+end else
+if (Edt1.Text = zqry1.Fields[1].AsString) and (Edt2.Text = zqry1.Fields[2].AsString) and(Edt3.Text = zqry1.Fields[3].AsString)and(Edt4.Text = zqry1.Fields[4].AsString)and(Edt5.Text = zqry1.Fields[5].AsString)and(edt1.Text = zqry1.Fields[6].AsString)and(Cbb1.Text = zqry1.Fields[7].AsString)and(edt2.Text = zqry1.Fields[8].AsString)and(Cbb2.Text = zqry1.Fields[9].AsString) then
+begin
+ShowMessage('DATA TIDAK ADA PERUBAHAN');
+posisiawal;
+end else
 begin
 id:=dbgrd1.DataSource.DataSet.FieldByName('id_ortu').AsString;
 
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tabel_ortu set nik= "'+Edt1.Text+'",nama="'+Edt2.Text+'", pendidikan= "'+Edt3.Text+'",pekerjaan= "'+Edt4.Text+'",telp= "'+Edt5.Text+'",alamat= "'+edt6.Text+'",jenis_kelamin= "'+Cbb1.Text+'",agama= "'+edt7.Text+'",status= "'+Cbb2.Text+'"  where id_ortu ="'+id+'"');
-zqry1.ExecSQL; 
+zqry1.SQL.Add('Update tabel_ortu set nik= "'+Edt1.Text+'",nama="'+Edt2.Text+'", pendidikan= "'+Edt3.Text+'",pekerjaan= "'+Edt4.Text+'",telp= "'+Edt5.Text+'",alamat= "'+edt1.Text+'",jenis_kelamin= "'+Cbb1.Text+'",agama= "'+edt2.Text+'",status= "'+Cbb2.Text+'"  where id_ortu ="'+id+'"');
+zqry1.ExecSQL;
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 
 zqry1.SQL.Clear;

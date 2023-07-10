@@ -14,6 +14,21 @@ object Form6: TForm6
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
+  object lbl1: TLabel
+    Left = 328
+    Top = 8
+    Width = 174
+    Height = 23
+    Caption = 'DATA ORANG TUA'
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
   object lbl4l: TLabel
     Left = 32
     Top = 77
@@ -79,21 +94,6 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
   end
-  object lbl1: TLabel
-    Left = 328
-    Top = 8
-    Width = 174
-    Height = 23
-    Caption = 'DATA ORANG TUA'
-    Color = clWhite
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -19
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentColor = False
-    ParentFont = False
-  end
   object lbl2: TLabel
     Left = 32
     Top = 197
@@ -146,41 +146,6 @@ object Form6: TForm6
     Font.Style = []
     ParentFont = False
   end
-  object edt1: TEdit
-    Left = 224
-    Top = 77
-    Width = 455
-    Height = 21
-    TabOrder = 0
-  end
-  object edt2: TEdit
-    Left = 224
-    Top = 101
-    Width = 455
-    Height = 21
-    TabOrder = 1
-  end
-  object edt3: TEdit
-    Left = 224
-    Top = 125
-    Width = 455
-    Height = 21
-    TabOrder = 2
-  end
-  object edt4: TEdit
-    Left = 224
-    Top = 149
-    Width = 455
-    Height = 21
-    TabOrder = 3
-  end
-  object edt5: TEdit
-    Left = 224
-    Top = 173
-    Width = 455
-    Height = 21
-    TabOrder = 4
-  end
   object dbgrd1: TDBGrid
     Left = 32
     Top = 380
@@ -193,7 +158,7 @@ object Form6: TForm6
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 5
+    TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -213,7 +178,7 @@ object Form6: TForm6
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 1
     OnClick = btn1Click
   end
   object btn2: TButton
@@ -228,7 +193,7 @@ object Form6: TForm6
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 2
     OnClick = btn2Click
   end
   object btn3: TButton
@@ -243,7 +208,7 @@ object Form6: TForm6
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 3
     OnClick = btn3Click
   end
   object btn4: TButton
@@ -258,7 +223,7 @@ object Form6: TForm6
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 4
     OnClick = btn4Click
   end
   object btn5: TButton
@@ -273,7 +238,7 @@ object Form6: TForm6
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 10
+    TabOrder = 5
     OnClick = btn5Click
   end
   object btn6: TButton
@@ -288,44 +253,8 @@ object Form6: TForm6
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 11
+    TabOrder = 6
     OnClick = btn6Click
-  end
-  object edt6: TEdit
-    Left = 224
-    Top = 197
-    Width = 455
-    Height = 21
-    TabOrder = 12
-  end
-  object edt7: TEdit
-    Left = 224
-    Top = 245
-    Width = 455
-    Height = 21
-    TabOrder = 13
-  end
-  object cbb1: TComboBox
-    Left = 224
-    Top = 222
-    Width = 453
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 14
-    Items.Strings = (
-      'L'
-      'P')
-  end
-  object cbb2: TComboBox
-    Left = 224
-    Top = 272
-    Width = 457
-    Height = 21
-    ItemHeight = 13
-    TabOrder = 15
-    Items.Strings = (
-      'Hidup'
-      'Alm')
   end
   object btn7: TBitBtn
     Left = 24
@@ -339,8 +268,79 @@ object Form6: TForm6
     Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 7
     OnClick = btn7Click
+  end
+  object edt3: TEdit
+    Left = 224
+    Top = 77
+    Width = 455
+    Height = 21
+    TabOrder = 8
+  end
+  object edt4: TEdit
+    Left = 224
+    Top = 101
+    Width = 455
+    Height = 21
+    TabOrder = 9
+  end
+  object edt5: TEdit
+    Left = 224
+    Top = 125
+    Width = 455
+    Height = 21
+    TabOrder = 10
+  end
+  object edt6: TEdit
+    Left = 224
+    Top = 149
+    Width = 455
+    Height = 21
+    TabOrder = 11
+  end
+  object edt7: TEdit
+    Left = 224
+    Top = 173
+    Width = 455
+    Height = 21
+    TabOrder = 12
+  end
+  object edt1: TEdit
+    Left = 224
+    Top = 197
+    Width = 455
+    Height = 21
+    TabOrder = 13
+  end
+  object edt2: TEdit
+    Left = 224
+    Top = 245
+    Width = 455
+    Height = 21
+    TabOrder = 14
+  end
+  object cbb1: TComboBox
+    Left = 224
+    Top = 222
+    Width = 453
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 15
+    Items.Strings = (
+      'L'
+      'P')
+  end
+  object cbb2: TComboBox
+    Left = 224
+    Top = 272
+    Width = 457
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 16
+    Items.Strings = (
+      'Hidup'
+      'Alm')
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP
