@@ -74,10 +74,10 @@ object Form10: TForm10
     Width = 113
     Height = 49
     Caption = 'MASUK'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 2
@@ -89,6 +89,12 @@ object Form10: TForm10
     Width = 121
     Height = 49
     Caption = 'CANCEL'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
     OnClick = btn1Click
   end

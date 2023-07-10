@@ -185,10 +185,10 @@ object Form5: TForm5
     Width = 75
     Height = 29
     Caption = 'BARU'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 1
@@ -200,10 +200,10 @@ object Form5: TForm5
     Width = 75
     Height = 29
     Caption = 'SIMPAN'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 2
@@ -215,10 +215,10 @@ object Form5: TForm5
     Width = 75
     Height = 26
     Caption = 'EDIT'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 3
@@ -230,10 +230,10 @@ object Form5: TForm5
     Width = 75
     Height = 29
     Caption = 'HAPUS'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 4
@@ -245,10 +245,10 @@ object Form5: TForm5
     Width = 75
     Height = 29
     Caption = 'BATAL'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 5
@@ -260,6 +260,12 @@ object Form5: TForm5
     Width = 75
     Height = 32
     Caption = 'LAPORAN'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
     OnClick = btn6Click
   end
@@ -353,9 +359,15 @@ object Form5: TForm5
   object btn7: TBitBtn
     Left = 32
     Top = 24
-    Width = 75
-    Height = 25
-    Caption = 'KEMBALI'
+    Width = 113
+    Height = 33
+    Caption = 'KEMBALI KE MENU'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 18
     OnClick = btn7Click
   end
@@ -372,7 +384,7 @@ object Form5: TForm5
     LibraryLocation = 
       'D:\DOKUMEN\SEMESTER 4\PEMPROGRAMAN VISUAL 2 (VISUAL)\ProjekAkhir' +
       '\libmysql.dll'
-    Left = 608
+    Left = 600
     Top = 64
   end
   object zqry1: TZQuery
@@ -381,12 +393,12 @@ object Form5: TForm5
     SQL.Strings = (
       'select * from tabel_siswa')
     Params = <>
-    Left = 608
+    Left = 600
     Top = 112
   end
   object ds1: TDataSource
     DataSet = zqry1
-    Left = 608
+    Left = 600
     Top = 160
   end
   object frxreport1: TfrxReport
@@ -404,8 +416,8 @@ object Form5: TForm5
       'begin'
       ''
       'end.')
-    Left = 608
-    Top = 216
+    Left = 648
+    Top = 64
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -824,7 +836,7 @@ object Form5: TForm5
     UserName = 'frxdbdtst1'
     CloseDataSource = False
     DataSet = zqry1
-    Left = 608
-    Top = 264
+    Left = 648
+    Top = 120
   end
 end

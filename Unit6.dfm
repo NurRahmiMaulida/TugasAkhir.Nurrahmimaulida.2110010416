@@ -1,7 +1,7 @@
 object Form6: TForm6
   Left = 192
   Top = 152
-  Width = 807
+  Width = 827
   Height = 661
   Caption = 'DATA ORANG TUA'
   Color = clOlive
@@ -207,10 +207,10 @@ object Form6: TForm6
     Width = 97
     Height = 44
     Caption = 'BARU'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 6
@@ -222,10 +222,10 @@ object Form6: TForm6
     Width = 97
     Height = 44
     Caption = 'SIMPAN'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 7
@@ -237,10 +237,10 @@ object Form6: TForm6
     Width = 97
     Height = 41
     Caption = 'EDIT'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 8
@@ -252,10 +252,10 @@ object Form6: TForm6
     Width = 97
     Height = 44
     Caption = 'HAPUS'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 9
@@ -267,10 +267,10 @@ object Form6: TForm6
     Width = 97
     Height = 44
     Caption = 'BATAL'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 10
@@ -282,6 +282,12 @@ object Form6: TForm6
     Width = 97
     Height = 41
     Caption = 'LAPORAN'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 11
     OnClick = btn6Click
   end
@@ -322,11 +328,17 @@ object Form6: TForm6
       'Alm')
   end
   object btn7: TBitBtn
-    Left = 32
+    Left = 24
     Top = 24
-    Width = 75
-    Height = 25
-    Caption = 'KEMBALI'
+    Width = 145
+    Height = 33
+    Caption = 'KEMBALI KE MENU'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 16
     OnClick = btn7Click
   end
@@ -375,8 +387,8 @@ object Form6: TForm6
       'begin'
       ''
       'end.')
-    Left = 704
-    Top = 208
+    Left = 752
+    Top = 56
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -730,7 +742,7 @@ object Form6: TForm6
     UserName = 'frxdbdtst1'
     CloseDataSource = False
     DataSource = ds1
-    Left = 704
-    Top = 256
+    Left = 752
+    Top = 112
   end
 end

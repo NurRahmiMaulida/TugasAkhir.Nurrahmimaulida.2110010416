@@ -20,9 +20,9 @@ object Form1: TForm1
     Width = 524
     Height = 33
     Caption = 'SISEM INFORMASI DATABASE SEKOLAH'
-    Color = clInfoBk
+    Color = clHotLight
     Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clWhite
     Font.Height = -27
     Font.Name = 'Showcard Gothic'
     Font.Style = [fsBold]
@@ -30,98 +30,142 @@ object Form1: TForm1
     ParentFont = False
   end
   object lbl2: TLabel
-    Left = 504
+    Left = 352
     Top = 80
-    Width = 64
+    Width = 317
     Height = 27
-    Caption = 'MENU'
+    Caption = 'MENU  APLIKASI SEKOLAHAN'
+    Color = clScrollBar
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -19
     Font.Name = 'Arial Black'
     Font.Style = [fsBold]
+    ParentColor = False
     ParentFont = False
   end
   object btnortu: TButton
-    Left = 288
-    Top = 120
-    Width = 129
-    Height = 33
+    Left = 216
+    Top = 128
+    Width = 177
+    Height = 49
     Caption = 'ORANG TUA'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
     OnClick = btnortuClick
   end
   object btnsiswa: TButton
-    Left = 456
-    Top = 120
-    Width = 137
-    Height = 33
+    Left = 416
+    Top = 128
+    Width = 169
+    Height = 49
     Caption = 'SISWA'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 1
     OnClick = btnsiswaClick
   end
   object btnwakel: TButton
-    Left = 632
-    Top = 120
-    Width = 137
-    Height = 33
+    Left = 608
+    Top = 128
+    Width = 177
+    Height = 49
     Caption = 'WALI KELAS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
     OnClick = btnwakelClick
   end
   object btnpoin: TButton
-    Left = 632
-    Top = 184
-    Width = 137
-    Height = 33
+    Left = 608
+    Top = 200
+    Width = 185
+    Height = 49
     Caption = 'POIN'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
     OnClick = btnpoinClick
   end
   object btnkelas: TButton
-    Left = 288
-    Top = 184
-    Width = 129
-    Height = 33
+    Left = 216
+    Top = 200
+    Width = 177
+    Height = 49
     Caption = 'KELAS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
     OnClick = btnkelasClick
   end
   object btnhubungan: TButton
-    Left = 288
-    Top = 240
-    Width = 225
-    Height = 33
+    Left = 216
+    Top = 272
+    Width = 273
+    Height = 49
     Caption = 'HUBUNGAN'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 5
     OnClick = btnhubunganClick
   end
   object btnsemester: TButton
-    Left = 456
-    Top = 184
-    Width = 137
-    Height = 33
+    Left = 416
+    Top = 200
+    Width = 169
+    Height = 49
     Caption = 'SEMESTER'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
     OnClick = btnsemesterClick
   end
   object btnuser: TButton
-    Left = 544
-    Top = 240
-    Width = 225
-    Height = 33
+    Left = 520
+    Top = 272
+    Width = 273
+    Height = 49
     Caption = 'DATA USER'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clRed
-    Font.Height = -11
-    Font.Name = 'Tahoma'
+    Font.Height = -16
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 7
     OnClick = btnuserClick
   end
   object mm1: TMainMenu
-    Left = 240
+    Left = 288
     Top = 80
     object Menu1: TMenuItem
       Caption = 'Menu'

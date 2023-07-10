@@ -16,8 +16,8 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 272
-    Top = 16
+    Left = 288
+    Top = 40
     Width = 136
     Height = 28
     Caption = 'DATA KELAS'
@@ -69,71 +69,77 @@ object Form2: TForm2
     ParentFont = False
   end
   object btn2: TButton
-    Left = 153
-    Top = 227
+    Left = 169
+    Top = 184
     Width = 75
-    Height = 29
+    Height = 32
     Caption = 'SIMPAN'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 0
     OnClick = btn2Click
   end
   object btn3: TButton
-    Left = 249
-    Top = 230
+    Left = 257
+    Top = 184
     Width = 75
-    Height = 26
+    Height = 32
     Caption = 'EDIT'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 1
     OnClick = btn3Click
   end
   object btn4: TButton
-    Left = 337
-    Top = 227
+    Left = 345
+    Top = 184
     Width = 75
-    Height = 29
+    Height = 32
     Caption = 'HAPUS'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 2
     OnClick = btn4Click
   end
   object btn5: TButton
-    Left = 425
-    Top = 227
+    Left = 441
+    Top = 184
     Width = 75
-    Height = 29
+    Height = 32
     Caption = 'BATAL'
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
-    Font.Name = 'Tahoma'
+    Font.Name = 'Stencil'
     Font.Style = []
     ParentFont = False
     TabOrder = 3
     OnClick = btn5Click
   end
   object btn6: TButton
-    Left = 513
-    Top = 230
-    Width = 75
-    Height = 26
+    Left = 529
+    Top = 184
+    Width = 80
+    Height = 32
     Caption = 'LAPORAN'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
     OnClick = btn6Click
   end
@@ -158,26 +164,38 @@ object Form2: TForm2
     TabOrder = 6
   end
   object btn1: TButton
-    Left = 48
-    Top = 224
+    Left = 80
+    Top = 184
     Width = 75
     Height = 33
     Caption = 'BARU'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 7
     OnClick = btn1Click
   end
   object btn7: TBitBtn
     Left = 32
     Top = 16
-    Width = 81
+    Width = 121
     Height = 33
-    Caption = 'KEMBALI'
+    Caption = 'KEMBALI KE MENU'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Stencil'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 8
     OnClick = btn7Click
   end
   object dbgrd1: TDBGrid
     Left = 56
-    Top = 296
+    Top = 232
     Width = 569
     Height = 177
     DataSource = ds1
@@ -234,8 +252,8 @@ object Form2: TForm2
       'begin'
       ''
       'end.')
-    Left = 616
-    Top = 168
+    Left = 664
+    Top = 32
     Datasets = <
       item
         DataSet = frxdbdtst1
@@ -389,7 +407,7 @@ object Form2: TForm2
     UserName = 'frxdbdtst1'
     CloseDataSource = False
     DataSet = zqry1
-    Left = 616
-    Top = 216
+    Left = 664
+    Top = 88
   end
 end
