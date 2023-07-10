@@ -4,7 +4,7 @@ object Form2: TForm2
   Width = 729
   Height = 540
   Caption = 'DATA KELAS'
-  Color = clMoneyGreen
+  Color = clPurple
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

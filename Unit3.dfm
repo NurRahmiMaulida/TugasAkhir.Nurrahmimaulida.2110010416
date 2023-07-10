@@ -4,7 +4,7 @@ object Form3: TForm3
   Width = 724
   Height = 541
   Caption = 'DATA POINT'
-  Color = clTeal
+  Color = clOlive
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

@@ -4,7 +4,7 @@ object Form7: TForm7
   Width = 718
   Height = 540
   Caption = 'DATA USER'
-  Color = clFuchsia
+  Color = clInfoBk
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

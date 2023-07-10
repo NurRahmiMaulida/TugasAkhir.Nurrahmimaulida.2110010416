@@ -4,7 +4,7 @@ object Form1: TForm1
   Width = 984
   Height = 515
   Caption = 'MENU UTAMA'
-  Color = clMenuHighlight
+  Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

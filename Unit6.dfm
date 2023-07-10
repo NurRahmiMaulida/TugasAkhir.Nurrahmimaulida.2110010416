@@ -4,7 +4,7 @@ object Form6: TForm6
   Width = 827
   Height = 661
   Caption = 'DATA ORANG TUA'
-  Color = clOlive
+  Color = clRed
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

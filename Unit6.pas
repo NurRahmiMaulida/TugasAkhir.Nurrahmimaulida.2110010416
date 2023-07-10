@@ -128,11 +128,11 @@ btn3.Enabled:= True;
 btn4.Enabled:= True;
 btn5.Enabled:= True;
 id:=zqry1.Fields[0].AsString;
-edt1.Text:= zqry1.FieldList[1].AsString;
-edt2.Text:= zqry1.FieldList[2].AsString;
-edt3.Text:= zqry1.FieldList[3].AsString;
-Edt4.Text:= zqry1.FieldList[4].AsString;
-Edt5.Text:= zqry1.FieldList[5].AsString;
+edt3.Text:= zqry1.FieldList[1].AsString;
+edt4.Text:= zqry1.FieldList[2].AsString;
+edt5.Text:= zqry1.FieldList[3].AsString;
+Edt6.Text:= zqry1.FieldList[4].AsString;
+Edt7.Text:= zqry1.FieldList[5].AsString;
 edt1.Text:= zqry1.FieldList[6].AsString;
 cbb1.Text:= zqry1.FieldList[7].AsString;
 edt2.Text:= zqry1.FieldList[8].AsString;
@@ -158,18 +158,18 @@ end;
 
 procedure TForm6.btn2Click(Sender: TObject);
 begin
-if(Edt1.Text = '')or(Edt2.Text = '')or(Edt3.Text = '')or(Edt4.Text = '')or(Edt5.Text = '')or(edt6.Text = '')or(cbb1.Text = '')or(edt7.Text = '')or(cbb2.Text = '')then
+if(Edt3.Text = '')or(Edt4.Text = '')or(Edt5.Text = '')or(Edt6.Text = '')or(Edt7.Text = '')or(edt1.Text = '')or(edt2.Text = '')or(cbb1.Text = '')or(cbb2.Text = '')then
 begin
   ShowMessage('DATA TIDAK BOLEH KOSONG !');
 end else
-if(zqry1.Locate('nik',Edt1.Text,[]))and(zqry1.Locate('nama',Edt2.Text,[]))then
+if(zqry1.Locate('nik',Edt3.Text,[]))and(zqry1.Locate('nama',Edt4.Text,[]))then
 begin
   ShowMessage('Data Ortu sudah digunakan');
   posisiawal;
 end else
 begin
 zqry1.sql.clear;
-zqry1.sql.Add('insert into tabel_ortu values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+Cbb1.Text+'","'+edt7.Text+'","'+Cbb2.Text+'")');
+zqry1.sql.Add('insert into tabel_ortu values(null,"'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt7.Text+'","'+edt1.Text+'","'+Cbb1.Text+'","'+edt2.Text+'","'+Cbb2.Text+'")');
 zqry1.ExecSQL;
 
 zqry1.SQL.Clear;
@@ -180,13 +180,14 @@ posisiawal;
 end;
 end;
 
+
 procedure TForm6.btn3Click(Sender: TObject);
 begin
-if (Edt1.Text = '')or(Edt2.Text = '')or(Edt3.Text = '')or(Edt4.Text = '')or(Edt5.Text = '')or(edt1.Text = '')or(edt2.Text = '')or(cbb1.Text = '')or(cbb2.Text = '')then
+if (Edt3.Text = '')or(Edt4.Text = '')or(Edt5.Text = '')or(Edt6.Text = '')or(Edt7.Text = '')or(edt1.Text = '')or(edt2.Text = '')or(cbb1.Text = '')or(cbb2.Text = '')then
 begin
   ShowMessage('DATA TIDAK BOLEH KOSONG !');
 end else
-if (Edt1.Text = zqry1.Fields[1].AsString) and (Edt2.Text = zqry1.Fields[2].AsString) and(Edt3.Text = zqry1.Fields[3].AsString)and(Edt4.Text = zqry1.Fields[4].AsString)and(Edt5.Text = zqry1.Fields[5].AsString)and(edt1.Text = zqry1.Fields[6].AsString)and(Cbb1.Text = zqry1.Fields[7].AsString)and(edt2.Text = zqry1.Fields[8].AsString)and(Cbb2.Text = zqry1.Fields[9].AsString) then
+if (Edt3.Text = zqry1.Fields[1].AsString) and (Edt4.Text = zqry1.Fields[2].AsString) and(Edt5.Text = zqry1.Fields[3].AsString)and(Edt6.Text = zqry1.Fields[4].AsString)and(Edt7.Text = zqry1.Fields[5].AsString)and(edt1.Text = zqry1.Fields[6].AsString)and(Cbb1.Text = zqry1.Fields[7].AsString)and(edt2.Text = zqry1.Fields[8].AsString)and(Cbb2.Text = zqry1.Fields[9].AsString) then
 begin
 ShowMessage('DATA TIDAK ADA PERUBAHAN');
 posisiawal;
@@ -195,7 +196,7 @@ begin
 id:=dbgrd1.DataSource.DataSet.FieldByName('id_ortu').AsString;
 
 zqry1.SQL.Clear;
-zqry1.SQL.Add('Update tabel_ortu set nik= "'+Edt1.Text+'",nama="'+Edt2.Text+'", pendidikan= "'+Edt3.Text+'",pekerjaan= "'+Edt4.Text+'",telp= "'+Edt5.Text+'",alamat= "'+edt1.Text+'",jenis_kelamin= "'+Cbb1.Text+'",agama= "'+edt2.Text+'",status= "'+Cbb2.Text+'"  where id_ortu ="'+id+'"');
+zqry1.SQL.Add('Update tabel_ortu set nik= "'+Edt3.Text+'",nama="'+Edt4.Text+'", pendidikan= "'+Edt5.Text+'",pekerjaan= "'+Edt6.Text+'",telp= "'+Edt7.Text+'",alamat= "'+edt1.Text+'",jenis_kelamin= "'+Cbb1.Text+'",agama= "'+edt2.Text+'",status= "'+Cbb2.Text+'"  where id_ortu ="'+id+'"');
 zqry1.ExecSQL;
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 

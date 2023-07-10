@@ -4,7 +4,7 @@ object Form4: TForm4
   Width = 732
   Height = 540
   Caption = 'DATA WALI KELAS'
-  Color = clMedGray
+  Color = clBtnShadow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

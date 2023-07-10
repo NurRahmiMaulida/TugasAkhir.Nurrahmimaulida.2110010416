@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 192
-  Top = 152
+  Left = 313
+  Top = 226
   Width = 729
   Height = 583
   Caption = 'DATA SEMESTER'

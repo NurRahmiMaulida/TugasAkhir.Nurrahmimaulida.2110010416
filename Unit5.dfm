@@ -4,7 +4,7 @@ object Form5: TForm5
   Width = 732
   Height = 626
   Caption = 'DATA SISWA'
-  Color = clActiveCaption
+  Color = clGreen
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
